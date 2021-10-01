@@ -1,0 +1,11 @@
+# IDE Files
+.idea/
+*.iml
+/StraceLexer.tokens
+
+# Python Files
+__pycache__/
+*.pyc
+
+# Cache directory for computed values
+computed/

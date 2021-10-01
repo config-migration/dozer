@@ -1,0 +1,57 @@
+132 SYS_brk(0)                                                                                                                                                      = 0x562681793000
+132 SYS_access("/etc/ld.so.preload", 04)                                                                                                                            = -2
+132 SYS_openat(0xffffff9c, 0x7f860fca090f, 0x80000, 0)                                                                                                              = 3
+132 SYS_fstat(3, 0x7fff277d29b0)                                                                                                                                    = 0
+132 SYS_mmap(0, 6938, 1, 2)                                                                                                                                         = 0x7f860fc7e000
+132 SYS_close(3)                                                                                                                                                    = 0
+132 SYS_openat(0xffffff9c, 0x7f860fca9df0, 0x80000, 0)                                                                                                              = 3
+132 SYS_read(3, "\177ELF\002\001\001\003", 832)                                                                                                                     = 832
+132 SYS_fstat(3, 0x7fff277d2a10)                                                                                                                                    = 0
+132 SYS_mmap(0, 8192, 3, 34)                                                                                                                                        = 0x7f860fc7c000
+132 SYS_mmap(0, 0x1c0800, 1, 2050)                                                                                                                                  = 0x7f860fabb000
+132 SYS_mprotect(0x7f860fadd000, 1658880, 0)                                                                                                                        = 0
+132 SYS_mmap(0x7f860fadd000, 0x148000, 5, 2066)                                                                                                                     = 0x7f860fadd000
+132 SYS_mmap(0x7f860fc25000, 0x4c000, 1, 2066)                                                                                                                      = 0x7f860fc25000
+132 SYS_mmap(0x7f860fc72000, 0x6000, 3, 2066)                                                                                                                       = 0x7f860fc72000
+132 SYS_mmap(0x7f860fc78000, 0x3800, 3, 50)                                                                                                                         = 0x7f860fc78000
+132 SYS_close(3)                                                                                                                                                    = 0
+132 SYS_arch_prctl(4098, 0x7f860fc7d540, 0x7f860fc7de90, 144)                                                                                                       = 0
+132 SYS_mprotect(0x7f860fc72000, 16384, 1)                                                                                                                          = 0
+132 SYS_mprotect(0x562681312000, 4096, 1)                                                                                                                           = 0
+132 SYS_mprotect(0x7f860fca7000, 4096, 1)                                                                                                                           = 0
+132 SYS_munmap(0x7f860fc7e000, 6938)                                                                                                                                = 0
+132 getenv("POSIXLY_CORRECT")                                                                                                                                       = nil
+132 strrchr("echo", '/')                                                                                                                                            = nil
+132 setlocale(LC_ALL, "")                                                                                                                                           = "C"
+132 bindtextdomain("coreutils", "/usr/share/locale" <unfinished ...>
+132     SYS_brk(0)                                                                                                                                                  = 0x562681793000
+132     SYS_brk(0x5626817b4000)                                                                                                                                     = 0x5626817b4000
+132 <... bindtextdomain resumed> )                                                                                                                                  = "/usr/share/locale"
+132 textdomain("coreutils")                                                                                                                                         = "coreutils"
+132 __cxa_atexit(0x56268130be20, 0, 0x562681313168, 0x736c6974756572)                                                                                               = 0
+132 strcmp("test", "--help")                                                                                                                                        = 71
+132 strcmp("test", "--version")                                                                                                                                     = 71
+132 fputs_unlocked(0x7fff277d4f5b, 0x7f860fc77760, 45, 0xffffffff <unfinished ...>
+132     SYS_fstat(1, 0x7fff277d35f0)                                                                                                                                = 0
+132 <... fputs_unlocked resumed> )                                                                                                                                  = 1
+132 __overflow(0x7f860fc77760, 10, 4, 0xfbad2a84 <unfinished ...>
+132     SYS_write(1, "test\n", 5)                                                                                                                                   = 5
+132 <... __overflow resumed> )                                                                                                                                      = 10
+132 __fpending(0x7f860fc77760, 0, 0x56268130be20, 1)                                                                                                                = 0
+132 fileno(0x7f860fc77760)                                                                                                                                          = 1
+132 __freading(0x7f860fc77760, 0, 0x56268130be20, 1)                                                                                                                = 0
+132 __freading(0x7f860fc77760, 0, 2052, 1)                                                                                                                          = 0
+132 fflush(0x7f860fc77760)                                                                                                                                          = 0
+132 fclose(0x7f860fc77760 <unfinished ...>
+132     SYS_close(1)                                                                                                                                                = 0
+132 <... fclose resumed> )                                                                                                                                          = 0
+132 __fpending(0x7f860fc77680, 0, 0x7f860fc72760, 2880)                                                                                                             = 0
+132 fileno(0x7f860fc77680)                                                                                                                                          = 2
+132 __freading(0x7f860fc77680, 0, 0x7f860fc72760, 2880)                                                                                                             = 0
+132 __freading(0x7f860fc77680, 0, 4, 2880)                                                                                                                          = 0
+132 fflush(0x7f860fc77680)                                                                                                                                          = 0
+132 fclose(0x7f860fc77680 <unfinished ...>
+132     SYS_close(2)                                                                                                                                                = 0
+132 <... fclose resumed> )                                                                                                                                          = 0
+132 SYS_exit_group(0 <no return ...>
+132 +++ exited (status 0) +++

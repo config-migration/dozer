@@ -1,0 +1,37 @@
+version: '3.7'
+
+services:
+
+  mysql:
+    image: mysql:8
+    container_name: dozer.mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_DATABASE: dozer
+    ports:
+      - 3306:3306
+    volumes:
+      - type: volume
+        source: mysql
+        target: /var/lib/mysql
+    command: --max-allowed-packet=1G
+
+  apt-cache:
+    image: sameersbn/apt-cacher-ng:latest
+    container_name: dozer.apt-cache
+    restart: unless-stopped
+    ports:
+      - 3142:3142
+    volumes:
+      - type: volume
+        source: apt-cache
+        target: /var/cache/apt-cacher-ng
+
+volumes:
+
+  mysql:
+    name: dozer.mysql.data
+
+  apt-cache:
+    name: dozer.apt-cache.volume

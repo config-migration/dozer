@@ -1,0 +1,91 @@
+136 SYS_brk(0)                                                                                                                                                      = 0x558449d54000
+136 SYS_access("/etc/ld.so.preload", 04)                                                                                                                            = -2
+136 SYS_openat(0xffffff9c, 0x7fabb3d7290f, 0x80000, 0)                                                                                                              = 3
+136 SYS_fstat(3, 0x7ffd7bff7500)                                                                                                                                    = 0
+136 SYS_mmap(0, 6938, 1, 2)                                                                                                                                         = 0x7fabb3d50000
+136 SYS_close(3)                                                                                                                                                    = 0
+136 SYS_openat(0xffffff9c, 0x7fabb3d7bdf0, 0x80000, 0)                                                                                                              = 3
+136 SYS_read(3, "\177ELF\002\001\001\003", 832)                                                                                                                     = 832
+136 SYS_fstat(3, 0x7ffd7bff7560)                                                                                                                                    = 0
+136 SYS_mmap(0, 8192, 3, 34)                                                                                                                                        = 0x7fabb3d4e000
+136 SYS_mmap(0, 0x1c0800, 1, 2050)                                                                                                                                  = 0x7fabb3b8d000
+136 SYS_mprotect(0x7fabb3baf000, 1658880, 0)                                                                                                                        = 0
+136 SYS_mmap(0x7fabb3baf000, 0x148000, 5, 2066)                                                                                                                     = 0x7fabb3baf000
+136 SYS_mmap(0x7fabb3cf7000, 0x4c000, 1, 2066)                                                                                                                      = 0x7fabb3cf7000
+136 SYS_mmap(0x7fabb3d44000, 0x6000, 3, 2066)                                                                                                                       = 0x7fabb3d44000
+136 SYS_mmap(0x7fabb3d4a000, 0x3800, 3, 50)                                                                                                                         = 0x7fabb3d4a000
+136 SYS_close(3)                                                                                                                                                    = 0
+136 SYS_arch_prctl(4098, 0x7fabb3d4f540, 0x7fabb3d4fe90, 144)                                                                                                       = 0
+136 SYS_mprotect(0x7fabb3d44000, 16384, 1)                                                                                                                          = 0
+136 SYS_mprotect(0x558448f88000, 4096, 1)                                                                                                                           = 0
+136 SYS_mprotect(0x7fabb3d79000, 4096, 1)                                                                                                                           = 0
+136 SYS_munmap(0x7fabb3d50000, 6938)                                                                                                                                = 0
+136 strrchr("rm", '/')                                                                                                                                              = nil
+136 setlocale(LC_ALL, "")                                                                                                                                           = "C"
+136 bindtextdomain("coreutils", "/usr/share/locale" <unfinished ...>
+136     SYS_brk(0)                                                                                                                                                  = 0x558449d54000
+136     SYS_brk(0x558449d75000)                                                                                                                                     = 0x558449d75000
+136 <... bindtextdomain resumed> )                                                                                                                                  = "/usr/share/locale"
+136 textdomain("coreutils")                                                                                                                                         = "coreutils"
+136 __cxa_atexit(0x558448f7c3b0, 0, 0x558448f89228, 0x736c6974756572)                                                                                               = 0
+136 isatty(0 <unfinished ...>
+136     SYS_ioctl(0, 0x5401, 0x7ffd7bff8170, -296)                                                                                                                  = 0
+136 <... isatty resumed> )                                                                                                                                          = 1
+136 getopt_long(3, 0x7ffd7bff83d8, "dfirvIR", 0x558448f88c00, nil)                                                                                                  = 114
+136 getopt_long(3, 0x7ffd7bff83d8, "dfirvIR", 0x558448f88c00, nil)                                                                                                  = 102
+136 getopt_long(3, 0x7ffd7bff83d8, "dfirvIR", 0x558448f88c00, nil)                                                                                                  = -1
+136 __lxstat(1, "/", 0x7ffd7bff8160 <unfinished ...>
+136     SYS_lstat("/", 0x7ffd7bff8160)                                                                                                                              = 0
+136 <... __lxstat resumed> )                                                                                                                                        = 0
+136 calloc(128, 1)                                                                                                                                                  = 0x558449d542b0
+136 strlen("/tmp/test")                                                                                                                                             = 9
+136 realloc(0, 4352)                                                                                                                                                = 0x558449d54340
+136 malloc(272)                                                                                                                                                     = 0x558449d55450
+136 memcpy(0x558449d55558, "", 0)                                                                                                                                   = 0x558449d55558
+136 strlen("/tmp/test")                                                                                                                                             = 9
+136 malloc(280)                                                                                                                                                     = 0x558449d55570
+136 memcpy(0x558449d55678, "/tmp/test", 9)                                                                                                                          = 0x558449d55678
+136 __fxstatat(1, 0xffffff9c, 0x558449d55678, 0x558449d555e8 <unfinished ...>
+136     SYS_newfstatat(0xffffff9c, 0x558449d55678, 0x558449d555e8, 256)                                                                                             = 0
+136 <... __fxstatat resumed> )                                                                                                                                      = 0
+136 malloc(272)                                                                                                                                                     = 0x558449d55690
+136 memcpy(0x558449d55798, "", 0)                                                                                                                                   = 0x558449d55798
+136 malloc(32)                                                                                                                                                      = 0x558449d557b0
+136 memmove(0x558449d54340, "/tmp/test\0", 10)                                                                                                                      = 0x558449d54340
+136 strrchr("/tmp/test", '/')                                                                                                                                       = "/test"
+136 strlen("test")                                                                                                                                                  = 4
+136 memmove(0x558449d55678, "test\0", 5)                                                                                                                            = 0x558449d55678
+136 malloc(32)                                                                                                                                                      = 0x558449d557b0
+136 unlinkat(0xffffff9c, 0x558449d54340, 0, 0 <unfinished ...>
+136     SYS_unlinkat(0xffffff9c, 0x558449d54340, 0, -1064)                                                                                                          = 0
+136 <... unlinkat resumed> )                                                                                                                                        = 0
+136 __errno_location()                                                                                                                                              = 0x7fabb3d4f4c0
+136 __errno_location()                                                                                                                                              = 0x7fabb3d4f4c0
+136 __fpending(0x7fabb3d48a00, 0, 0x558448f7c3b0, 0)                                                                                                                = 0
+136 fileno(0x7fabb3d48a00)                                                                                                                                          = 0
+136 __freading(0x7fabb3d48a00, 0, 0x558448f7c3b0, 0)                                                                                                                = 1
+136 fileno(0x7fabb3d48a00)                                                                                                                                          = 0
+136 lseek(0, 0, 1 <unfinished ...>
+136     SYS_lseek(0, 0, 1)                                                                                                                                          = -29
+136 <... lseek resumed> )                                                                                                                                           = -1
+136 fclose(0x7fabb3d48a00 <unfinished ...>
+136     SYS_close(0)                                                                                                                                                = 0
+136 <... fclose resumed> )                                                                                                                                          = 0
+136 __fpending(0x7fabb3d49760, 0, 0x7fabb3d44760, 2880)                                                                                                             = 0
+136 fileno(0x7fabb3d49760)                                                                                                                                          = 1
+136 __freading(0x7fabb3d49760, 0, 0x7fabb3d44760, 2880)                                                                                                             = 0
+136 __freading(0x7fabb3d49760, 0, 4, 2880)                                                                                                                          = 0
+136 fflush(0x7fabb3d49760)                                                                                                                                          = 0
+136 fclose(0x7fabb3d49760 <unfinished ...>
+136     SYS_close(1)                                                                                                                                                = 0
+136 <... fclose resumed> )                                                                                                                                          = 0
+136 __fpending(0x7fabb3d49680, 0, 0x7fabb3d44760, 2880)                                                                                                             = 0
+136 fileno(0x7fabb3d49680)                                                                                                                                          = 2
+136 __freading(0x7fabb3d49680, 0, 0x7fabb3d44760, 2880)                                                                                                             = 0
+136 __freading(0x7fabb3d49680, 0, 4, 2880)                                                                                                                          = 0
+136 fflush(0x7fabb3d49680)                                                                                                                                          = 0
+136 fclose(0x7fabb3d49680 <unfinished ...>
+136     SYS_close(2)                                                                                                                                                = 0
+136 <... fclose resumed> )                                                                                                                                          = 0
+136 SYS_exit_group(0 <no return ...>
+136 +++ exited (status 0) +++

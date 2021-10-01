@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+antlr4-python3-runtime = "*"
+networkx = "*"
+pandas = "*"
+ansible = "*"
+pyyaml = "*"
+sqlalchemy = "*"
+pymysql = "*"
+
+[requires]
+python_version = "3.8"
